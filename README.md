@@ -22,10 +22,10 @@ Obviously this works best if you start with a SELECT or UPDATE
 statement, because DELETE statements don't have columns and
 bindvariables, and INSERT statements don't have where clauses.
 
-A possible way to customize your .emacs would be to use the following
-(assuming you are using sql-mode.el from the page mentioned above):
+A possible way to customize your Emacs would be to use the following
+(assuming you are using SQL Mode):
 
-```
+```emacs
 (add-hook 'sql-mode-hook
 	  (function (lambda ()
 		      (local-set-key "\C-cu" 'sql-to-update))))
